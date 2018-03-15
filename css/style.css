@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.header_top {background-color:#293449;
+ }
+
+.logo_header {
+  font-size: 24px;
+  line-height: 24px;
+  background-color: #ee3643;
+  text-decoration: none;
+ text-transform: uppercase;
+ box-shadow: 0 5px 0 0 #b52933
+}
+.logo_header:hover{
+    background: #ca2c37;
+    box-shadow: 0 5px 0 0 #9a212a;
+}
+.logo_header:active{
+    background: #ba2732;
+    box-shadow: 0 5px 0 0 #8e1e26;
+}
+.button_search {
+   border: medium none;
+   background-color: transparent;
+   opacity: 0.3;
+  }
+
+.search_text   {
+
+    top: 0;
+    right: 0;
+    font-size: 17px;
+    color: #000000;
+    background: none;
+    width: 230px;
+    height: 46px;
+    border: none;
+    outline: none;
+   }
+.button_search:hover{opacity: 1;}
+
+
+
+
+.order_buttons a{
+  text-decoration: none;
+font-size: 17px;
+line-height: 18px;
+color: #ffffff;
+}
+
+.order_buttons a:hover,
+.order_buttons a:focus
+{background-color: #212a3a;
+opacity: 1;}
+
+.bookmark-image {
+  opacity: 0.3;
+}
+
+
+.page-header {background: #f1f5f7}
+
+.header_mid_contacts p { font-size: 14px;
+    line-height: 24px;
+  color: #32425c}
+
+
+    .header_mid_text{
+      font-size: 16px;
+      line-height: 23px;
+      font-style: italic;
+    color: #ee3643;}
+
+
+.contacts_phone {
+  text-decoration: none;
+  font-size: 21px;
+    line-height: 21px;
+    color: #e9292a;
+    padding: 10px;
+   margin: 0;
+   margin-bottom: 9px;
+   border: 3px solid #ffffff;
+  }
+.login_registration {list-style-type:none;}
+
+.button {
+    font-size: 21px;
+    line-height: 21px;
+    text-decoration: none;
+    color: #000000;
+    background: #ffffff;
+     }
+
+.login_registration a:hover{color: #ee3643;}
+.login_registration a:active{color: #c5c5c5;}
+.login_image {opacity:0.5;}
+.login_registration a:hover .login_image{opacity:1;}
+.login_registration a:active .login_image{opacity:0.5;}

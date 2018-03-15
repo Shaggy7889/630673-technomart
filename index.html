@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Проект "Техномарт"</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
       </head>
   <body>
 <header class="page-header">
@@ -10,30 +13,28 @@
      <a class="logo_header" href="#">техномарт</a>
       <form>
          <button class="button_search" type="submit"><img src="img/svg/icon-search.svg" alt="Начать поиск"></button>
-         <input type="text" placeholder="Поиск" name="search">
+         <input type="text" class="search_text header_link" placeholder="Поиск" name="search">
       </form>
-    <div class="order_buttons">
-     <ul>
-       <li class="menu-top_bookmarks">
-         <a href="#">Закладки: 0</a>
+         <ul class="order_buttons">
+       <li class="menu-top_bookmarks header_link">
+         <a href="#"><img src="img/svg/icon-bookmark.svg" class="bookmark-image">Закладки: 0</a>
        </li>
-       <li class="menu-top_basket">
+       <li class="menu-top_basket header_link">
          <a href="#">Корзина: 0</a>
        </li>
-       <li class="menu-top_order">
+       <li class="menu-top_order header_link">
          <a href="#">Оформить заказ</a>
        </li>
       </ul>
-    </div>
-   </div>
+       </div>
 <div class="header_mid">
   <p class="header_mid_text">Интернет-магазин строительных материвалов и инструментов для ремонта</p>
     <div class="header_mid_contacts">
         <a href="tel:+74955550555" class="contacts_phone"><img src="img/svg/icon-phone.svg" alt="Telefon"> +7 (495) 555-05-55</a>
-        <address>г.Санкт-Петербург, ул., Б. Конюшенная, д.19/8</address>
+        <p>г.Санкт-Петербург, ул., Б. Конюшенная, д.19/8</p>
     </div>
-   <ul>
-     <li><a class="button" href="#">Войти</a></li>
+   <ul class="login_registration">
+     <li><a class="button" href="#"><img class="login_image" src="img/svg/icon-login.svg">Войти</a></li>
      <li><a class="button" href="#">Регистрация</a></li>
    </ul>
   </div>
