@@ -10,82 +10,107 @@
   <body>
 <header class="page-header">
   <div class="header_top">
+    <div class="container">
+      <div class="header_top_flex">
      <a class="logo_header" href="#">техномарт</a>
-      <form>
-         <button class="button_search" type="submit"><img src="img/svg/icon-search.svg" alt="Начать поиск"></button>
-         <input type="text" class="search_text header_link" placeholder="Поиск" name="search">
+      <form class="form_search">
+         <label class="button_search" for="search_text_head" ><img src="img/svg/icon-search.svg" alt="поиск"></label>
+         <input type="text" class="search_text" id="search_text_head" placeholder="Поиск"  name="search">
       </form>
          <ul class="order_buttons">
        <li class="menu-top_bookmarks header_link">
-         <a href="#"><img src="img/svg/icon-bookmark.svg" class="bookmark-image">Закладки: 0</a>
+         <a href="#"><img src="img/svg/icon-bookmark.svg" class="order_buttons_image">Закладки: 0</a>
        </li>
        <li class="menu-top_basket header_link">
-         <a href="#">Корзина: 0</a>
+         <a href="#"><img src="img/svg/icon-cart.svg" class="order_buttons_image">Корзина: 0</a>
        </li>
-       <li class="menu-top_order header_link">
+       <li class="menu-top_order">
          <a href="#">Оформить заказ</a>
        </li>
       </ul>
+      </div>
        </div>
-<div class="header_mid">
-  <p class="header_mid_text">Интернет-магазин строительных материвалов и инструментов для ремонта</p>
-    <div class="header_mid_contacts">
-        <a href="tel:+74955550555" class="contacts_phone"><img src="img/svg/icon-phone.svg" alt="Telefon"> +7 (495) 555-05-55</a>
-        <p>г.Санкт-Петербург, ул., Б. Конюшенная, д.19/8</p>
-    </div>
-   <ul class="login_registration">
-     <li><a class="button" href="#"><img class="login_image" src="img/svg/icon-login.svg">Войти</a></li>
-     <li><a class="button" href="#">Регистрация</a></li>
-   </ul>
+       </div>
+  <div class="container">
+    <div class="header_mid">
+<p class="header_mid_text">Интернет-магазин строительных материвалов и инструментов для ремонта</p>
+ <div class="header_mid_contacts">
+     <a href="tel:+74955550555" class="contacts_phone"><img class="header_mid_telefon" src="img/svg/icon-phone.svg" alt="Telefon"> +7 (495) 555-05-55</a>
+     <p>г.Санкт-Петербург, ул., Б. Конюшенная, д.19/8</p>
+ </div>
+<ul class="login_registration">
+  <li class="login_registration login_registration-margin-right"><a class="button" href="#"><img class="login_image" src="img/svg/icon-login.svg">Войти</a></li>
+  <li class="login_registration "><a class="button button_registration" href="#">Регистрация</a></li>
+</ul>
+</div>
+    <nav class="main-navigation">
+           <ul class="site-navigation">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="company.html">Компания</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="news.html">Новости</a></li>
+              <li><a href="superprice.html">Спецпредложения</a></li>
+              <li><a href="shipping.html">Доставка</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+     </nav>
   </div>
-  <nav class="main-navigation">
-         <ul class="site-navigation">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="company.html">Компания</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="superprice.html">Спецпредложения</a></li>
-            <li><a href="shipping.html">Доставка</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-   </nav>
 </header>
 <main class="container">
   <section class="promo_blocks">
-
+    <div class="promo-container">
+    <div class="promo-top">
     <div class="promo-item  materials">
-              <h4>Материалы</h4>
-              <a class="promo-info  materials-info" href="catalog.html">на любой вкус</a>
+      <div class="features-img features-img_materials"></div>
+              <h4 class="promo-name">Материалы</h4>
+
+              <a class="promo-info   materials-info" href="catalog.html">НА ЛЮБОЙ ВКУС</a>
+
             </div>
-            <div class="promo-item  instruments">
-          <h4>Инструмент</h4>
+            <div class="promo-item instruments">
+              <div class="features-img features-img_instruments"></div>
+          <h4 class="promo-name">Инструмент</h4>
           <a class="promo-info  instrument-info" href="catalog.html">на все случаи</a>
           </div>
           <div class="promo-item  machines">
-          <h4>Техника</h4>
+            <div class="features-img features-img_machines"></div>
+          <h4 class="promo-name">Техника</h4>
           <a class="promo-info  machines-info" href="catalog.html">для стройки</a>
         </div>
-        <div class="promo-item  discount">
-          <h4>Скидки 50%</h4>
-          <a class="promo-info  discount-info" href="catalog.html">на 350 товаров</a>
         </div>
-        <div class="promo-item_slider">
-          <ul>
+        <div class="promo-bottom"><div class="promo-item_slider">
+
+                    <ul>
             <li class="promo-item_slider1">
-              <img src="img/slider-1.jpg" width="620" height="266" alt="Дрели">
-             <h3>Дрели</h3>
+              <h3>Дрели</h3>
              <p class="description">Соседям на радость!</p>
              </li>
-           <li class="promo-item_slider2">
+           <!-- <li class="promo-item_slider2">
              <img src="img/slider-2.jpg" width="620" height="266" alt="Дрели">
             <h3>Перфораторы</h3>
             <p class="description">Настоящие мужские игрушки</p>
-          </li>
-        </ul>
-        <button class="button promo-item_slider-button-back" type="button"><img src="img/svg/icon-left.svg" alt="назад"></button>
+          </li> -->
+            </ul>        <!-- <button class="button promo-item_slider-button-back" type="button"><img src="img/svg/icon-left.svg" alt="назад"></button>
         <button class="button promo-item_slider-button-next" type="button"><img src="img/svg/icon-right.svg" alt="вперед"></button>
-            <a class="promo-info drill" href="catalog.html">Открыть каталог</a>
+            <a class="promo-info drill" href="catalog.html">Открыть каталог</a> -->
               </div>
+          <div class="promo-wrapper">
+        <div class="promo-item   discount">
+          <div class="features-img features-img_discount"></div>
+          <h4 class="promo-name">Скидки 50%</h4>
+          <a class="promo-info  discount-info" href="catalog.html">на 350 товаров</a>
+        </div>
+        <div class="promo-item  delivery">
+          <div class="features-img features-img_delivery"></div>
+          <h4 class="promo-name">Доставка</h4>
+          <a class="promo-info  delivery-info" href="catalog.html">БЕСПЛАТНО</a>
+        </div>
+        </div>
+
+
+
+            </div>
+            </div>
     </section>
 
         <section class="products">
