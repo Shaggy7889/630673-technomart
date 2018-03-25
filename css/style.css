@@ -260,6 +260,38 @@ width: 260px;
 height: 85px;
 padding: 20px;
   }
+.slider-1_name {font-size: 36px;
+line-height: 36px;
+margin: 0px;}
+
+p.description {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+button.promo-item_slider-button-back {
+    background: none;
+    border: none;
+    margin-right: 504px;
+    margin-bottom: 52px;
+}
+
+a.red_button.drill {
+    background-color: #ee3643;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding: 14px 24px 14px 22px;
+}
+
+button.promo-item_slider-button-next {
+    background: none;
+    border: none;
+}
+
 .promo-info {
   font-size: 14px;
     line-height: 18px;
@@ -556,12 +588,32 @@ p.services_description {
     font-size: 13px;
     line-height: 24px;
 }
+.list_shipping_company {list-style: none;}
+.list_shipping_company li {
+    position: relative;
+    margin-bottom: 25px;
+    padding-left: 35px;
+}
+.list_shipping_company li:after{
+	content: "";
+    display: block;
+	position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 25px;
+    height: 2px;
+    background: #fb565a;
+}
+
+
 
 .shipping_company {
     margin-bottom: 24px;
     font-size: 18px;
     line-height: 20px;
 }
+
+
 
 a.button_about {
     background-color: #ee3643;
@@ -764,3 +816,205 @@ text-decoration: none;
 
 .feedback_button:hover {text-decoration: underline;}
 .feedback_button:active {color: #ee3643}
+
+
+
+/* Каталог */
+
+.breadcrumbs{
+    font-size: 12px;
+	text-decoration: none;
+    text-transform: uppercase;
+	color: #000000;
+	list-style: none;
+	padding: 25px 0;
+}
+.breadcrumbs ul{
+    margin: 0;
+    padding: 0;
+}
+.breadcrumbs li{
+	display: inline;
+	position: relative;
+
+	padding-right: 20px;
+}
+.breadcrumbs a{
+    font-size: 12px;
+    line-height: 18px;
+	text-decoration: none;
+    text-transform: uppercase;
+	color: #000000;
+  margin-right: 15px;
+}
+.breadcrumbs a:hover{
+	text-decoration: underline;
+}
+.breadcrumbs_list:after {content: url(../img/svg/icon-right-small.svg);}
+
+.page_name {margin: 0;
+    padding: 0;
+    height: 56px;
+    padding-top: 33px;
+    background-color: #f7f3ec;
+    padding-left: 30px;
+    margin-bottom: 20px;}
+
+.work_page-flex {display: flex;}
+
+fieldset {border: none}
+legend {text-transform: uppercase;}
+
+section.filters {
+  max-width: 220px;
+  margin-right: 20px;
+}
+
+.filters_name-field {
+    max-height: 38px;
+    background-color: #f7f3ec;
+    padding: 14px 0px 15px 18px;
+    margin-bottom: 20px;
+}
+
+.forms_name {margin-bottom: 21px;}
+.filter-option_radio {margin-bottom: 83px;}
+.filter_price_text {
+    max-width: 94px;
+    border: none;
+    text-align: center;
+    background-color: #f7f3ec;
+    height: 38px;
+}
+
+ul.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.page2 {
+      margin-bottom: 20px;
+    }
+
+.page2:nth-child(3n+2) {margin-right: 23px;
+margin-left: 24px;}
+.nsorting {flex-direction: column;
+    width: 100%;}
+
+fieldset {padding: 0;
+margin: 0}
+
+.sorting {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f7f3ec;
+    padding: 14px 17px 15px 18px;
+    text-transform: uppercase;
+        margin-bottom: 20px;
+}
+
+ul.sorting_buttons {
+    list-style: none;
+    display: flex;}
+
+    .sorting_price {margin-right: 65px;}
+  .sorting_tipe  {margin-right: 57px;}
+
+button.sorting_buttons_price {
+    border: none;
+    background: none;
+}
+
+button.sorting_buttons_tipe {
+    border: none;
+    background: none;
+}
+
+button.sorting_buttons_function {
+    border: none;
+    background: none;
+}
+
+ul.sorting_arrows {
+    list-style: none;
+    display: flex;
+}
+
+button.sorting_arrows_up {
+    border: none;
+    background: none;
+}
+
+button.sorting_arrows_down {
+    border: none;
+    background: none;
+    margin-left: 21px;
+}
+
+.filter_min-max {
+    display: flex;
+    align-items: center;
+}
+
+.sign {margin-left: 10px;
+    margin-right: 10px;}
+.catalog_paginator {
+    list-style: none;
+    display: flex;
+    margin-bottom: 60px;
+}
+.catalog_paginator_score {margin-right: 10px;}
+
+.page-button {
+    width: 38px;
+    height: 38px;
+    border: 1px solid #e5e5e5;
+    background-color: #ffff;
+    border-radius: 6px;
+}
+.page-button_next {  width: 138px;
+  height: 38px;
+  border: 1px solid #e5e5e5;
+  background-color: #ffff;
+  border-radius: 6px;}
+.visually-hidden {display: none}
+
+.filter-option {list-style: none;
+padding-left: 26px;}
+
+.filter-option1 label::before {content: url(../img/svg/checkbox-off.svg);
+  position: relative;
+  top: 8px;
+  right: 25px;}
+.filter-input-checkbox:checked + label:before {content: url(../img/svg/checkbox-on.svg);
+  position: relative;
+  top: 8px;
+  right: 25px;}
+
+
+.filter-option2 label::before {content: url(../img/svg/radio-off.svg);
+  position: relative;
+  top: 8px;
+  right: 25px;}
+.filter-input-radio:checked + label:before {content: url(../img/svg/radio-on.svg);
+  position: relative;
+  top: 8px;
+  right: 25px;}
+
+button.filter-button {
+    height: 38px;
+    border: 1px solid #e5e5e5;
+    background-color: #ffff;
+    border-radius: 6px;
+    width: 140px;
+}
+
+.filter_manufactures {border-top: 1px solid #e5e5e5;
+border-bottom: 1px solid #e5e5e5;}
+
+.about_perforator {padding: 0;
+    padding-top: 67px;
+    margin-bottom: 38px;}
+
+.about_perforator_text {padding-bottom: 73px;}
