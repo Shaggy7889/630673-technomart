@@ -73,7 +73,7 @@
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
     <fieldset>
       <legend class="forms_name">Цена</legend>
-      <input type="range" name="price" id="filter_price">
+      <input type="range" class="111" name="price" id="filter_price">
       <div class="filter_min-max">
       <input type="text" class="filter_price_text"  id="filter_price_min" value="0">
     <span class="sign">-</span>
@@ -128,13 +128,22 @@
   <div class="sorting">
     <p>Сортировка:</p>
     <ul class="sorting_buttons">
-      <li class="sorting_price"><button class="sorting_buttons_price">ПО ЦЕНЕ</button></li>
-      <li class="sorting_tipe"><button class="sorting_buttons_tipe">ПО ТИПУ</button></li>
-      <li class="sorting_function"><button class="sorting_buttons_function">ПО ФУНКЦИОНАЛУ</button></li>
+      <li class="sorting_price">
+        <input type="radio" id="sorting_input_price" name="filter_radio" class="sorting_buttons_price" checked>
+        <label  for="sorting_input_price" class="filter_text_price">ПО ЦЕНЕ</label>
+      </li>
+      <li class="sorting_tipe">
+        <input type="radio" id="sorting_input_tipe" name="filter_radio" class="sorting_buttons_tipe">
+        <label for="sorting_input_tipe" class="filter_text_tipe">ПО ТИПУ</label>
+      </li>
+      <li class="sorting_function">
+        <input type="radio" id="sorting_input_function" name="filter_radio" class="sorting_buttons_function">
+        <label for="sorting_input_function" class="filter_text_function"> ПО ФУНКЦИОНАЛУ</label>
+      </li>
     </ul>
     <ul class="sorting_arrows">
-      <li><button class="sorting_arrows_up"><img src="img/svg/icon-up-dir.svg" alt="Вверх"></button></li>
-      <li><button class="sorting_arrows_down"><img src="img/svg/icon-down-dir.svg" alt="Вниз"></button></li>
+      <li class="sorting_arrows_1"><input type="radio" name="sorting_arrows" id="arrows_up" class="sorting_arrows_up"><label class="sorting_arrows_up-img" for="arrows_up"><img src="img/svg/icon-up-dir.svg" alt="Вверх"></label></li>
+      <li class="sorting_arrows_2"><input type="radio" name="sorting_arrows" id="arrows_down" class="sorting_arrows_down"><label for="arrows_down" class="sorting_arrows_down-img"><img src="img/svg/icon-down-dir.svg" alt="Вниз"></label></li>
     </ul>
   </div>
            <div class="product list">
@@ -167,6 +176,7 @@
                   <button class="actions_buy"><img class="actions_buy_image" src="img/svg/icon-cart.svg">Купить</button>
                   <button class="actions_bookmark">В закладки</button>
                 </div>
+                <div class="flag"><img src="img/new_flag.png"></div>
                 <div class="image"><img src="img/perf-4.jpg" width="184" height="161" alt="Перфоратор Bosch BFG 2000">
                 </div>
                 <a class="title" href="#">Перфоратор Bosch BFG 2000</a>
@@ -188,6 +198,7 @@
                   <button class="actions_buy"><img class="actions_buy_image" src="img/svg/icon-cart.svg">Купить</button>
                   <button class="actions_bookmark">В закладки</button>
                 </div>
+                <div class="flag"><img src="img/new_flag.png"></div>
                 <div class="image"><img src="img/perf-3.jpg" width="184" height="161" alt="Перфоратор Bosch BFG 6000">
                 </div>
                 <a class="title" href="#">Перфоратор Bosch BFG 6000</a>
@@ -209,6 +220,7 @@
                     <button class="actions_buy"><img class="actions_buy_image" src="img/svg/icon-cart.svg">Купить</button>
                     <button class="actions_bookmark">В закладки</button>
                   </div>
+                  <div class="flag"><img src="img/new_flag.png"></div>
                   <div class="image"><img src="img/perf-2.jpg" width="184" height="161" alt="Перфоратор Bosch BFG 3000">
                   </div>
                   <a class="title" href="#">Перфоратор Bosch BFG 3000</a>
@@ -329,3 +341,5 @@
 </div>
 </div>
 </footer>
+</body>
+</html>
