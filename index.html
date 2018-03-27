@@ -84,20 +84,19 @@
           </div>
           <div class="promo-bottom">
             <div class="promo-item_slider">
-              <ul>
+              <ul id="slider" >
                 <li class="promo-item_slider1">
                   <h3 class="slider-1_name">Дрели</h3>
                   <p class="description">Соседям на радость!</p>
-                  <button class="button promo-item_slider-button-back" type="button"><img src="img/svg/icon-left.svg" alt="назад"></button>
-                  <button class="button promo-item_slider-button-next" type="button"><img src="img/svg/icon-right.svg" alt="вперед"></button>
-                  <a class="red_button drill" href="catalog.html">Открыть каталог</a>
+                <a class="red_button drill" href="catalog.html">Открыть каталог</a>
                 </li>
-                <!-- <li class="promo-item_slider2">
-             <img src="img/slider-2.jpg" width="620" height="266" alt="Дрели">
-            <h3>Перфораторы</h3>
+                <li class="promo-item_slider2">
+              <h3 class="slider-1_name">Перфораторы</h3>
             <p class="description">Настоящие мужские игрушки</p>
-          </li> -->
+          </li>
               </ul>
+              <button class="button promo-item_slider-button-back" type="button"><img src="img/svg/icon-left.svg" alt="назад"></button>
+              <button class="button promo-item_slider-button-next" type="button"><img src="img/svg/icon-right.svg" alt="вперед"></button>
             </div>
             <div class="promo-wrapper">
               <div class="promo-item   discount">
@@ -241,7 +240,7 @@
         <h3 class="contacts_name">КОНТАКТЫ</h3>
         <p class="contacts_text">Вы можете забрать товар сами, заехав в наш офис:</p>
         <div class="contacts_map">
-          <a class="contacts_map_button"><img src="img/map.png" width="300" height="158" alt="map"></a>
+          <a class="contacts_map_button js_button_map" href="#"><img src="img/map.png" width="300" height="158" alt="map"></a>
         </div>
         <button class="contacts_button_lost red_button">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ</button>
       </div>
@@ -318,6 +317,109 @@
       </div>
     </div>
   </footer>
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.599104370518!2d30.320889251753!3d59.93879418178733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1522156517498" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <p><img src="img/map_popup.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
+  <section class="modal modal-write_us">
+    <form class="modal_form">
+
+      <label for="login" class="label_login">Ваше имя:<br>
+      <input type="text" class="modal_input input_login" id="login" placeholder="Представьтесь, пожалуйста"></label>
+
+
+      <label for="email" class="label_email">Ваш e-mail:<br>
+          <input type="email" class="modal_input input_email" id="email" placeholder="Для отправки ответа"></label>
+
+
+      <label for="letter" class="label_letter">Текст письма:<br>
+      <textarea  class="modal_input input_letter" id="letter" placeholder="В свободной форме"></textarea></label>
+      </form>
+      <div class="modal-background">
+        <button class="modal_button">Отправить</button>
+      </div>
+
+  <button class="modal-close" type="button">Закрыть</button>
+</section>
+
+<script>
+  var link = document.querySelector(".contacts_button_lost");
+
+  var popup = document.querySelector(".modal-write_us");
+   var close = popup.querySelector(".modal-close");
+
+  link.addEventListener("click", function (evt) {
+       evt.preventDefault();
+       popup.classList.add("modal-show");
+  });
+
+  close.addEventListener("click", function (evt) {
+   evt.preventDefault();
+   popup.classList.remove("modal-show");
+ });
+
+ window.addEventListener("keydown", function (evt) {
+   if (evt.keyCode === 27) {
+     evt.preventDefault();
+     if (popup.classList.contains("modal-show")) {
+       popup.classList.remove("modal-show");
+     }
+   }
+ });
+
+ var mapLink = document.querySelector(".js_button_map");
+
+var mapPopup = document.querySelector(".modal-map");
+var mapClose = mapPopup.querySelector(".modal-close");
+
+mapLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.add("modal-show");
+  });
+
+  mapClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.remove("modal-show");
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    evt.preventDefault();
+    if (evt.keyCode === 27) {
+      if (mapPopup.classList.contains("modal-show")) {
+        mapPopup.classList.remove("modal-show");
+      }
+    }
+  });
+
+
+  var back = document.querySelector(".promo-item_slider-button-back");
+
+  var next = document.querySelector(".promo-item_slider-button-next");
+  var slide1 = document.querySelector(".promo-item_slider1");
+  var slide2 = document.querySelector(".promo-item_slider2");
+
+  next.addEventListener("click", function (evt) {
+       evt.preventDefault();
+       slide2 .classList.remove("modal-off");
+       slide1 .classList.remove("modal-show");
+       slide2 .classList.add("modal-show");
+       slide1 .classList.add("modal-off");
+  });
+
+
+
+  back.addEventListener("click", function (evt) {
+       evt.preventDefault();
+       slide2 .classList.remove("modal-show");
+       slide1 .classList.remove("modal-off");
+       slide2 .classList.add("modal-off");
+       slide1 .classList.add("modal-show");
+  });
+
+
+</script>
 </body>
 
 </html>

@@ -341,8 +341,12 @@ p.description {
 button.promo-item_slider-button-back {
   background: none;
   border: none;
-  margin-right: 504px;
-  margin-bottom: 52px;
+left: 24px;
+top: 112px;
+position: absolute;
+  }
+
+.button {position: absolute;
 }
 
 a.red_button.drill {
@@ -357,7 +361,10 @@ a.red_button.drill {
 
 button.promo-item_slider-button-next {
   background: none;
-  border: none;
+border: none;
+right: 24px;
+top: 112px;
+position: absolute;
 }
 
 .promo-info {
@@ -454,12 +461,24 @@ button.promo-item_slider-button-next {
   justify-content: space-between;
 }
 
-.promo-item_slider {
+.promo-item_slider {position: relative;}
+
+.promo-item_slider1 {
+
   width: 620px;
   height: 262px;
   background-image: url(../img/slider-1.jpg);
   background-repeat: no-repeat;
 }
+.promo-item_slider2 {
+  display: none;
+  width: 620px;
+  height: 262px;
+  background-image: url(../img/slider-2.jpg);
+  background-repeat: no-repeat;
+}
+
+
 
 /* продукты */
 
@@ -1445,4 +1464,121 @@ button.filter-button {
 
 .about_perforator_text {
   padding-bottom: 73px;
+}
+
+.modal-map {
+  display: none;
+  position: fixed;
+  top: 50%;
+   left: 50%;
+   margin-top: -223px;
+   margin-left: -470px;
+  width: 940px;
+  height: 446px;
+  box-shadow: 0 8px 25px 5px #c0c0c0;
+}
+
+.modal-close {
+  position: absolute;
+  top: 11px;
+  right: 30px;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+      position: absolute;
+      top: 10px;
+      left: 2px;
+      width: 31px;
+      height: 5px;
+      background-color: red;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-write_us {display: none;
+position: fixed;
+top: 50%;
+ left: 50%;
+ margin-top: -215px;
+ margin-left: -310px;
+width: 620px;
+height: 430px;
+background-color: #ffffff;
+box-shadow: 0 8px 25px 5px #c0c0c0;}
+
+.modal_form {    display: flex;
+    padding: 45px 80px 0px 80px;
+    flex-wrap: wrap;
+    margin-bottom: 39px;}
+.input_login  {width: 220px;
+height: 38px;
+margin-right: 12px;}
+
+.input_email  {width: 220px;
+height: 38px;}
+
+.input_letter {    width: 460px;
+    height: 114px;}
+
+    .modal_input {border: 2px #dee3e4 solid}
+
+    label.label_letter {
+    margin-top: 21px;
+}
+.modal_input {
+    border: 2px #dee3e4 solid;
+    border-radius: 5px;
+}
+label.label_letter {
+    margin-top: 21px;
+}
+.modal-write_us {
+    border-top: 8px solid #ee3643;
+}
+.modal-background {
+    background-color: #f4f4f4;
+    padding: 38px 80px 38px 80px;
+}
+button.modal_button {
+    width: 460px;
+    height: 36px;
+    background: #ee3643;
+    border: none;
+    border-radius: 5px;
+}
+
+.modal-show {
+  display: block;
+}
+.modal-off {
+  display: none;
+}
+
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+
+  border: none;
+}
+
+.modal-map p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
