@@ -17,14 +17,14 @@
         <div class="header_top_flex">
           <a class="logo_header" href="#">техномарт</a>
           <form class="form_search">
-            <label class="button_search" for="search_text_head"><input type="image" src="img/svg/icon-search.svg"></label>
-            <input type="search" class="search_text" id="search_text_head" placeholder="Поиск" name="search">
+            <label class="button_search" for="search_text_head"><input class="icon-search" type="image" src="img/svg/icon-search.svg"></label>
+          <input type="search" class="search_text" id="search_text_head" placeholder="Поиск" name="search">
           </form>
           <ul class="order_buttons">
             <li class="menu-top_bookmarks header_link">
               <a href="#"><img src="img/svg/icon-bookmark.svg" class="order_buttons_image">Закладки: 0</a>
             </li>
-            <li class="menu-top_basket header_link">
+            <li class="header_link">
               <a href="#"><img src="img/svg/icon-cart.svg" class="order_buttons_image">Корзина: 0</a>
             </li>
             <li class="menu-top_order">
@@ -64,11 +64,11 @@
       <section class="promo_blocks">
         <div class="promo-container">
           <div class="promo-top">
-            <div class="promo-item  materials">
+            <div class="promo-item  materials catalog_item_new">
               <div class="features-img features-img_materials"></div>
               <h4 class="promo-name">Материалы</h4>
 
-              <a class="promo-info   materials-info" href="catalog.html">НА ЛЮБОЙ ВКУС</a>
+              <a class="promo-info   materials-info " href="catalog.html">НА ЛЮБОЙ ВКУС</a>
 
             </div>
             <div class="promo-item instruments">
@@ -84,19 +84,19 @@
           </div>
           <div class="promo-bottom">
             <div class="promo-item_slider">
-              <ul id="slider" >
-                <li class="promo-item_slider1">
+              <ul id="slider">
+                <li class="promo-item_slider1  show">
                   <h3 class="slider-1_name">Дрели</h3>
                   <p class="description">Соседям на радость!</p>
-                <a class="red_button drill" href="catalog.html">Открыть каталог</a>
+                  <a class="red_button drill" href="catalog.html">Открыть каталог</a>
                 </li>
                 <li class="promo-item_slider2">
-              <h3 class="slider-1_name">Перфораторы</h3>
-            <p class="description">Настоящие мужские игрушки</p>
-          </li>
+                  <h3 class="slider-1_name">Перфораторы</h3>
+                  <p class="description">Настоящие мужские игрушки</p>
+                </li>
               </ul>
-              <button class="button promo-item_slider-button-back" type="button"><img src="img/svg/icon-left.svg" alt="назад"></button>
-              <button class="button promo-item_slider-button-next" type="button"><img src="img/svg/icon-right.svg" alt="вперед"></button>
+              <button class="button promo-item_slider-button-back" type="button"></button>
+              <button class="button promo-item_slider-button-next" type="button"></button>
             </div>
             <div class="promo-wrapper">
               <div class="promo-item   discount">
@@ -120,7 +120,7 @@
       <section class="products">
         <div class="products_title">
           <h2 class="popular">Популярные товары:</h2>
-          <a class="button_catalog red_button" href="catalog.html">Все популярные товары</a>
+          <a class="button_catalog red_button-popular_goods" href="catalog.html">Все популярные товары</a>
         </div>
         <ul class="catalog">
           <li class="catalog_item">
@@ -157,12 +157,11 @@
             <del class="price-old">30 500 P.</del>
             <ins class="price">25 500 P.</ins>
           </li>
-          <li class="catalog_item">
+          <li class="catalog_item catalog_item_new">
             <div class="actions">
               <button class="actions_buy"><img class="actions_buy_image" src="img/svg/icon-cart.svg">Купить</button>
               <button class="actions_bookmark">В закладки</button>
             </div>
-            <div class="flag"><img src="img/new_flag.png"></div>
             <div class="image"><img src="img/perf-4.jpg" width="184" height="161" alt="Перфоратор Bosch BFG 2000">
             </div>
             <a class="title" href="#">Перфоратор Bosch BFG 2000</a>
@@ -172,13 +171,13 @@
       </section>
       <section class="manufacturers">
         <div class="section_title">
-          <h2 class="popular">Производители</h2>
-          <a class="button_catalog red_button" href="catalog.html">Все производители</a>
+          <h2 class="popular">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ</h2>
+          <a class="button_catalog red_button-manufactures" href="catalog.html">Все производители</a>
         </div>
         <ul class="catalog_manufacturers">
           <li class="manufacturers_item"><a> <img src="img/bosch.png" width="126" height="37" alt="BOSCH"></a></li>
           <li class="manufacturers_item"><a> <img src="img/makita.png" width="123" height="40" alt="MAKITA"></a></li>
-          <li class="manufacturers_item"><a> <img src="img/dewalt.png" width="146" height="94" alt="DEWALT"></a></li>
+          <li class="manufacturers_item"><a> <img src="img/dewalt.png" width="146" height="45" alt="DEWALT"></a></li>
           <li class="manufacturers_item"><a> <img src="img/interscol.png" width="184" height="32" alt="ИНТЕРСКОЛ"></a></li>
           <li class="manufacturers_item"><a> <img src="img/hitachi.png" width="169" height="31" alt="HITACHI"></a></li>
           <li class="manufacturers_item"><a> <img src="img/lg.png" width="121" height="73" alt="LG"></a></li>
@@ -194,21 +193,21 @@
           <p class="services_description">Хороший интернет-магазин отличается от плохого не только ценами!<br> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         </div>
         <div class="services_button">
-          <input type="radio" id="btn-1" name="inform_block" checked>
-          <input type="radio" id="btn-2" name="inform_block">
-          <input type="radio" id="btn-3" name="inform_block">
+          <input class="delivery_input" type="radio" id="btn-1" name="inform_block" checked>
+          <input class="garanty_input" type="radio" id="btn-2" name="inform_block">
+          <input class="credit_input" type="radio" id="btn-3" name="inform_block">
 
           <div class="services_control">
-            <label for="btn-1">Доставка</label>
-            <label for="btn-2">Гарантия</label>
-            <label for="btn-3">Кредит</label>
+            <label class="delivery_input_block" for="btn-1">Доставка</label>
+            <label class="garanty_input_block" for="btn-2">Гарантия</label>
+            <label class="credit_input_block" for="btn-3">Кредит</label>
           </div>
 
           <div class="description_block">
 
             <div class="inner-description_block services_shipping">
               <h2>Доставка</h2>
-              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем</p>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
             </div>
             <div class="inner-description_block services_warranty">
               <h2>Гарантия</h2>
@@ -319,7 +318,8 @@
   </footer>
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.599104370518!2d30.320889251753!3d59.93879418178733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1522156517498" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.599104370518!2d30.320889251753!3d59.93879418178733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1522156517498"
+      width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
     <p><img src="img/map_popup.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
@@ -336,90 +336,16 @@
 
       <label for="letter" class="label_letter">Текст письма:<br>
       <textarea  class="modal_input input_letter" id="letter" placeholder="В свободной форме"></textarea></label>
-      </form>
-      <div class="modal-background">
-        <button class="modal_button">Отправить</button>
-      </div>
+    </form>
+    <div class="modal-background">
+      <button class="modal_button">Отправить</button>
+    </div>
 
-  <button class="modal-close" type="button">Закрыть</button>
-</section>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
 
-<script>
-  var link = document.querySelector(".contacts_button_lost");
+  <script src="js/scripts.js">
+    </script>
+    </body>
 
-  var popup = document.querySelector(".modal-write_us");
-   var close = popup.querySelector(".modal-close");
-
-  link.addEventListener("click", function (evt) {
-       evt.preventDefault();
-       popup.classList.add("modal-show");
-  });
-
-  close.addEventListener("click", function (evt) {
-   evt.preventDefault();
-   popup.classList.remove("modal-show");
- });
-
- window.addEventListener("keydown", function (evt) {
-   if (evt.keyCode === 27) {
-     evt.preventDefault();
-     if (popup.classList.contains("modal-show")) {
-       popup.classList.remove("modal-show");
-     }
-   }
- });
-
- var mapLink = document.querySelector(".js_button_map");
-
-var mapPopup = document.querySelector(".modal-map");
-var mapClose = mapPopup.querySelector(".modal-close");
-
-mapLink.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    mapPopup.classList.add("modal-show");
-  });
-
-  mapClose.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    mapPopup.classList.remove("modal-show");
-  });
-
-  window.addEventListener("keydown", function (evt) {
-    evt.preventDefault();
-    if (evt.keyCode === 27) {
-      if (mapPopup.classList.contains("modal-show")) {
-        mapPopup.classList.remove("modal-show");
-      }
-    }
-  });
-
-
-  var back = document.querySelector(".promo-item_slider-button-back");
-
-  var next = document.querySelector(".promo-item_slider-button-next");
-  var slide1 = document.querySelector(".promo-item_slider1");
-  var slide2 = document.querySelector(".promo-item_slider2");
-
-  next.addEventListener("click", function (evt) {
-       evt.preventDefault();
-       slide2 .classList.remove("modal-off");
-       slide1 .classList.remove("modal-show");
-       slide2 .classList.add("modal-show");
-       slide1 .classList.add("modal-off");
-  });
-
-
-
-  back.addEventListener("click", function (evt) {
-       evt.preventDefault();
-       slide2 .classList.remove("modal-show");
-       slide1 .classList.remove("modal-off");
-       slide2 .classList.add("modal-off");
-       slide1 .classList.add("modal-show");
-  });
-
-
-</script>
-</body>
-
-</html>
+    </html>
