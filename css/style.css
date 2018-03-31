@@ -42,13 +42,13 @@ ul, menu, dir {
 }
 
 .logo_header {
-  font-size: 24px;
+  font-size: 24.2px;
   background-color: #ee3643;
   text-decoration: none;
   text-transform: uppercase;
   box-shadow: 0 5px 0 0 #b52933;
-  padding: 13px 55px 0px 55px;
-  color: #ffffff
+  padding: 11px 55px 0px 55px;
+  color: #ffffff;
 }
 
 .logo_header:hover {
@@ -116,9 +116,9 @@ ul, menu, dir {
 
 .order_buttons a {
   text-decoration: none;
-  font-size: 17px;
-  line-height: 18px;
-  color: #ffffff;
+    font-size: 16.7px;
+    line-height: 18px;
+    color: #ffffff;
 }
 
 .order_buttons {
@@ -128,9 +128,9 @@ ul, menu, dir {
 }
 
 .header_link {
-  padding: 13px 30px 13px 0px;
-  padding-bottom: 13px;
-  padding-right: 27px;
+  padding: 10px 0px 0px 0px;
+  padding-bottom: 8px;
+  padding-right: 29px;
 }
 
 .header_link:hover {
@@ -159,7 +159,7 @@ ul, menu, dir {
 .menu-top_order {
   text-align: center;
   background: #63a63e;
-  padding: 13px 22px 0px 21px;
+  padding: 10px 22px 0px 21px;
 }
 
 
@@ -178,8 +178,8 @@ ul, menu, dir {
   max-width: 940px;
   margin: 0 auto;
   justify-content: space-between;
-  padding-top: 42px;
-  padding-bottom: 44px;
+  padding-top: 49px;
+  padding-bottom: 40px;
 }
 
 .header_mid_contacts {
@@ -233,8 +233,8 @@ ul, menu, dir {
   text-decoration: none;
   color: #000000;
   background: #ffffff;
-  padding-top: 14px;
-  padding-right: 26px;
+  padding-top: 10px;
+  padding-right: 24px;
 }
 
 .button_registration {
@@ -297,12 +297,9 @@ ul, menu, dir {
   display: block;
   text-decoration: none;
   color: #ffffff;
-  padding: 20px 25px;
+  padding: 19px 21px;
 }
 
-.main-navigation a:hover {
-  /* background: #293449; */
-}
 
 .container {
   max-width: 940px;
@@ -403,7 +400,7 @@ p.description {
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
-  padding: 10px 20px;
+      padding: 11px 26px;
   cursor: pointer;
   border-radius: 5px;
 }
@@ -435,7 +432,7 @@ p.description {
   line-height: 30px;
   color: #ffffff;
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
 }
 
 .features-img_materials {
@@ -516,11 +513,11 @@ p.description {
 
 .products_title {
   display: flex;
-  background-color: #f9f5f0;
-  justify-content: space-between;
-  margin-top: 53px;
-  margin-bottom: 20px;
-  padding: 26px 24px 0px 0px;
+      background-color: #f9f5f0;
+      justify-content: space-between;
+      margin-top: 57px;
+      margin-bottom: 20px;
+      padding: 26px 24px 0px 1px;
 }
 
 .popular {
@@ -530,7 +527,7 @@ p.description {
   text-transform: uppercase;
   color: #32425c;
   margin: 0;
-  padding: 0px 0px 35px 28px;
+      padding: 4px 0px 30px 28px;
 }
 
 .button_catalog {
@@ -684,9 +681,9 @@ p.description {
   display: flex;
   background-color: #f9f5f0;
   justify-content: space-between;
-  margin-top: 32px;
+  margin-top: 30px;
   margin-bottom: 20px;
-  padding: 25px 24px 0px 0px;
+  padding: 27px 24px 0px 0px;
 }
 
 .catalog_manufacturers {
@@ -694,7 +691,7 @@ p.description {
   list-style-type: none;
   flex-flow: wrap;
   justify-content: space-between;
-  margin-bottom: 56px;
+  margin-bottom: 60px;
 }
 
 li.manufacturers_item {
@@ -720,13 +717,18 @@ li.manufacturers_item:active {
 }
 
 h2.block-services_name {
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
-  font-weight: 100;
-  font-family: 'PT Sans', sans-serif;
-  margin: 0;
-  margin-bottom: 29px;
+  font-size: 25px;
+      line-height: 27px;
+      text-transform: uppercase;
+      font-weight: 100;
+      font-family: 'PT Sans', sans-serif;
+      margin: 0;
+      margin-bottom: 31px;
+      font-weight: bold;
+}
+.services_description {
+    font-size: 13.9px;
+    font-weight: bold;
 }
 
 .services_container_description {
@@ -754,7 +756,7 @@ h2.block-services_name {
   color: #ffffff;
   width: 200px;
   background: #32425c;
-  padding: 15px 20px;
+  padding: 18px 17px 14px 23px;
   border-top: 1px solid #405069;
   border-bottom: 1px solid #293449;
   cursor: pointer;
@@ -772,17 +774,19 @@ h2.block-services_name {
 }
 
 .description_block h2 {
-  font-size: 36px;
-  line-height: 36px;
-  text-transform: uppercase;
-  font-weight: 100;
-  color: #32425c;
-  margin: 0;
-  margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #32425c;
+    margin: 0;
+    margin-bottom: 25px;
 }
 
 .description_block p {
-  width: 249px;
+  width: 284px;
+      font-weight: bold;
+      font-size: 13.7px;
 }
 
 .services_shipping {
@@ -829,7 +833,7 @@ h2.block-services_name {
 
 .company_description_n_contacts.container {
   display: flex;
-  padding-top: 82px;
+      padding-top: 80px;
 }
 
 .company_description {
@@ -838,25 +842,27 @@ h2.block-services_name {
 }
 
 .company_name {
-  margin-bottom: 23px;
-  font-size: 29px;
-  line-height: 30px;
-  margin-top: 0;
-  font-weight: bold;
+  margin-bottom: 26px;
+      font-size: 29px;
+      line-height: 30px;
+      margin-top: 0;
+      font-weight: bold;
 }
 
 .about_company {
-  margin-bottom: 27px;
-  font-size: 13px;
+  margin-bottom: 25px;
+  font-size: 14px;
   line-height: 24px;
+  font-weight: bold;
 }
 
 .about_shipping {
-  padding-right: 163px;
-  margin-bottom: 19px;
-  font-size: 13px;
-  line-height: 24px;
-}
+  padding-right: 89px;
+      margin-bottom: 19px;
+      font-size: 13.7px;
+      line-height: 24px;
+      font-weight: bold;
+  }
 
 .list_shipping_company li {
   position: relative;
@@ -871,14 +877,13 @@ h2.block-services_name {
   position: absolute;
   top: 50%;
   left: 0px;
-  width: 25px;
-  height: 2px;
+  width: 25.2px;
+      height: 3px;
   background: #fb565a;
 }
 
 .shipping_company {
-  margin-bottom: 24px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
   font-family: 'PT Sans', sans-serif;
   font-weight: bold;
@@ -886,12 +891,12 @@ h2.block-services_name {
 
 .button_about {
   background-color: #ee3643;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  padding: 14px 40px 14px 41px;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 18px;
+      text-transform: uppercase;
+      padding: 11.8px 40px 9px 41.4px;
 }
 
 .contacts_name {
@@ -904,18 +909,19 @@ h2.block-services_name {
 
 p.contacts_text {
   padding-right: 122px;
-  margin-bottom: 23px;
-  font-size: 13px;
+  margin-bottom: 31px;
+  font-size: 13.6px;
   line-height: 24px;
+  font-weight: bold;
 }
 
 .list_shipping_company {
-  margin-bottom: 47px;
+margin-bottom: 46px;
   list-style: none;
 }
 
 .contacts_map {
-  margin-bottom: 37px;
+  margin-bottom: 33px;
 }
 
 .contacts_button_lost {
@@ -924,36 +930,36 @@ p.contacts_text {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  padding: 14px 62px 14px 64px;
+    padding: 10px 62px 10px 64px;
   border: none;
 }
 
 .footer_top_background {
   background-color: #32425c;
-  padding-bottom: 53px;
+padding-bottom: 47px;
 }
 
 .footer_top_main {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
+      margin-bottom: 33px;
 }
 
 a.logo_footer {
-  font-size: 30px;
+  font-size: 30.2px;
   background-color: #ee3643;
   text-decoration: none;
   text-transform: uppercase;
   box-shadow: 0 5px 0 0 #b52933;
-  padding: 21px 41px 21px 41px;
-  line-height: 30px;
+  padding: 18px 41px 0 41px;
+  line-height: 28px;
   color: #ffff;
 }
 
 ul.footer_top_main_menu {
   display: flex;
   list-style: none;
-  padding-top: 42px;
+    padding-top: 37px;
   width: 547px;
   justify-content: space-between;
 }
@@ -967,7 +973,7 @@ a.footer_top_button {
 
 address.footer_adress {
   color: #f1f5f7;
-  font-size: 18px;
+  font-size: 18.5px;
   line-height: 24px;
   font-style: normal;
 }
@@ -1009,14 +1015,15 @@ ul.footer_top_second_menu {
   padding-top: 35px;
 }
 
-p.copyright {
+.copyright {
   max-width: 276px;
   color: #f3f7f9;
-  font-size: 18px;
+  font-size: 16.2px;
   line-height: 24px;
+      margin-right: 41px;
 }
 
-a.btn-social_vk {
+.btn-social_vk {
   border: 1px white;
   background-color: #212a3a;
   padding: 13px 8px 13px 8px;
@@ -1026,6 +1033,7 @@ a.btn-social_vk {
 .feedback {
   display: flex;
   list-style: none;
+  padding: 2px 12px 0px 0px;
 }
 
 .feedback_mail {
@@ -1106,7 +1114,7 @@ ul.footer_social_menu {
 
 .red_button-manufactures {
   border-radius: 3px;
-  padding: 11px 68px 0px 69px;
+  padding: 8px 68px 0px 69px;
   max-height: 28px;
 }
 
@@ -1170,7 +1178,7 @@ ul.footer_social_menu {
   text-transform: uppercase;
   color: #000000;
   list-style: none;
-  padding: 17px 0;
+  padding: 15.9px 0;
 }
 
 .breadcrumbs ul {
@@ -1179,18 +1187,17 @@ ul.footer_social_menu {
 }
 
 .breadcrumbs li {
-  display: inline;
-  position: relative;
-  padding-right: 16px;
+    display: inline;
+    position: relative;
+    padding-right: 19px;
 }
-
 .breadcrumbs a {
-  font-size: 12px;
-  line-height: 18px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #000000;
-  margin-right: 15px;
+  font-size: 14.5px;
+      line-height: 18px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #000000;
+      margin-right: 15px;
 }
 
 .breadcrumbs a:hover {
@@ -1203,13 +1210,13 @@ ul.footer_social_menu {
 
 .page_name {
   margin: 0;
-  padding: 0;
-  height: 56px;
-  padding-top: 33px;
-  background-color: #f7f3ec;
-  padding-left: 32px;
-  margin-bottom: 20px;
-  font-size: 28px;
+      padding: 0;
+      height: 56px;
+      padding-top: 33px;
+      background-color: #f7f3ec;
+      padding-left: 32px;
+      margin-bottom: 20px;
+      font-size: 28px;
 }
 
 .work_page-flex {
@@ -1237,7 +1244,7 @@ legend {
 }
 
 .forms_name {
-  margin-bottom: 21px;
+  margin-bottom: 15px;
   font-size: 22px;
 }
 
@@ -1260,12 +1267,12 @@ legend {
 }
 
 .page2 {
-  margin-bottom: 20px;
+      margin-bottom: 28px;
 }
 
 .page2:nth-child(3n+2) {
-  margin-right: 23px;
-  margin-left: 24px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .nsorting {
@@ -1282,14 +1289,17 @@ fieldset {
   display: flex;
   justify-content: space-between;
   background-color: #f7f3ec;
-  padding: 14px 17px 15px 18px;
+  padding: 7px 17px 7px 28px;
   text-transform: uppercase;
   margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 ul.sorting_buttons {
   list-style: none;
-  display: flex;
+      display: flex;
+      margin-left: 69px;
 }
 
 .sorting_price {
@@ -1297,7 +1307,7 @@ ul.sorting_buttons {
 }
 
 .sorting_tipe {
-  margin-right: 57px;
+    margin-right: 57px;
 }
 
 .sorting_buttons_function {
@@ -1415,19 +1425,20 @@ button.sorting_arrows_down {
 .filter_min-max {
   display: flex;
   align-items: center;
-  margin-bottom: 13px;
+  margin-bottom: 24px;
+  font-size: 19px;
 }
 
 .sign {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 13px;
+  margin-right: 13px;
 }
 
 .catalog_paginator {
   list-style: none;
   display: flex;
-  margin-bottom: 44px;
-  padding-left: 11px;
+  margin-bottom: 35px;
+  padding-left: 0;
 }
 
 .catalog_paginator_score {
@@ -1466,6 +1477,9 @@ button.sorting_arrows_down {
   background-color: #ffff;
   border-radius: 6px;
   outline: none;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: lowercase;
 }
 
 .visually-hidden {
@@ -1475,6 +1489,8 @@ button.sorting_arrows_down {
 .filter-option {
   list-style: none;
   padding-left: 13px;
+  font-weight: bold;
+  font-size: 16.8px;
 }
 
 .filter-option1 label::before {
@@ -1482,14 +1498,6 @@ button.sorting_arrows_down {
   position: relative;
   top: 3px;
   right: 13px;
-}
-
-.filter-option1 {
-  margin-bottom: 9px;
-}
-
-.filter-option2 {
-  margin-bottom: 7px;
 }
 
 .filter-input-checkbox:checked+label:before {
@@ -1525,29 +1533,27 @@ label .filter-option1 {
   width: 140px;
   font-size: 18px;
   font-weight: 100;
+  text-transform: lowercase;
 }
 
 .filter_manufactures {
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
-  padding: 19px 0px 8px 3px;
+  padding: 19px 0px 8px 0px;
   margin-bottom: 21px;
 }
 
 .about_perforator {
   padding: 0;
-  padding-top: 58px;
+  padding-top: 67.5px;
   margin-bottom: 30px;
   font-size: 30px;
 }
 
 .about_perforator_text {
-  padding-bottom: 73px;
-  font-size: 15px;
-}
-
-.form_check {
-  padding-left: 4px;
+  padding-bottom: 68px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .modal-map {
@@ -1607,10 +1613,13 @@ label .filter-option1 {
 }
 
 .modal_form {
-  display: flex;
-  padding: 45px 80px 0px 80px;
-  flex-wrap: wrap;
   margin-bottom: 39px;
+}
+
+.modal_container {
+  display: flex;
+    flex-wrap: wrap;
+  padding: 45px 80px 0px 80px;
 }
 
 .input_login {
@@ -1653,7 +1662,9 @@ label.label_letter {
 .modal-background {
   background-color: #f4f4f4;
   padding: 38px 80px 38px 80px;
+  margin-top: 30px;
 }
+
 
 button.modal_button {
   width: 460px;
@@ -1701,8 +1712,8 @@ div .credit_input:checked~div .credit_input_block {
 
 .client {
   display: flex;
-  flex-wrap: wrap;
-  max-width: 300px;
+      flex-wrap: wrap;
+      max-width: 300px;
 }
 
 .client-logout {
@@ -1755,13 +1766,12 @@ div .credit_input:checked~div .credit_input_block {
 .range-controls {
   position: relative;
   height: 80px;
-  font-family: 'Roboto', sans-serif;
   font-family: bold;
   font-size: 16px;
   line-height: 22px;
   background: #f7f3ec;
   padding: 0 20px;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   border-radius: 4px;
 }
 
@@ -1808,12 +1818,13 @@ div .credit_input:checked~div .credit_input_block {
 }
 
 .filter_manufactures_name {
-  font-size: 21px;
-  margin-bottom: 10px;
+  font-size: 19.3px;
+      margin-bottom: 10px;
+      font-weight: bold;
 }
 
 .filter-option1 {
-  margin-bottom: 9px;
+    margin-bottom: 11px;
 }
 
 .filter-option2 {
@@ -1821,8 +1832,9 @@ div .credit_input:checked~div .credit_input_block {
 }
 
 .form_check_name {
-  font-size: 21px;
-  margin-bottom: 6px;
+  font-size: 20px;
+      margin-bottom: 6px;
+      font-weight: bold;
 }
 
 .akm {
@@ -1830,7 +1842,7 @@ div .credit_input:checked~div .credit_input_block {
 }
 
 .product.list {
-  margin-bottom: 42px;
+    margin-bottom: 33.3px;
 }
 
 .about_product_text {

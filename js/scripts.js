@@ -2,11 +2,31 @@ var link = document.querySelector(".contacts_button_lost");
 
 var popup = document.querySelector(".modal-write_us");
 var close = popup.querySelector(".modal-close");
+var loginInput =   document.querySelector("#login");
+var emailInput =   document.querySelector("#email");
+var form = document.querySelector(".modal_form");
+var textInput = document.querySelector(".input_letter")
 
 link.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
+
+  var login = localStorage.getItem ("loginInput")
+  var email = localStorage.getItem ("emailInput")
+
+  if(login) {
+    loginInput.value = login;
+    emailInput.value = email;
+    textInput.focus()
+  }
+
+
+
 });
+
+
+
+
 
 close.addEventListener("click", function(evt) {
   evt.preventDefault();
@@ -21,6 +41,16 @@ window.addEventListener("keydown", function(evt) {
     }
   }
 });
+
+form.addEventListener("submit", function (evt) {
+   if (loginInput.value && emailInput.value && textInput.value.length > 10) {
+     localStorage.setItem("loginInput", loginInput.value);
+     localStorage.setItem("emailInput", emailInput.value);
+   } else {
+     evt.preventDefault();
+     console.log("Нужно ввести логин и e-mail");
+   }
+ });
 
 var mapLink = document.querySelector(".js_button_map");
 
