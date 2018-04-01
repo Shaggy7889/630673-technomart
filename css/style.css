@@ -810,15 +810,15 @@ h2.block-services_name {
   width: 620px;
 }
 
-#btn-1:checked~.description_block .inner-description_block:nth-child(1) {
+.delivery_input:checked~.description_block .inner-description_block:nth-child(1) {
   display: block
 }
 
-#btn-2:checked~.description_block .inner-description_block:nth-child(2) {
+.garanty_input:checked~.description_block .inner-description_block:nth-child(2) {
   display: block
 }
 
-#btn-3:checked~.description_block .inner-description_block:nth-child(3) {
+.credit_input:checked~.description_block .inner-description_block:nth-child(3) {
   display: block
 }
 
@@ -1848,3 +1848,8 @@ div .credit_input:checked~div .credit_input_block {
 .about_product_text {
     background-color: #f1f5f7;
 }
+
+iframe {
+  width:940;
+   height:446;
+   border:0;}
