@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>Проект "Техномарт"</title>
-<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-mini.css" rel="stylesheet">
 </head>
-
 <body>
   <header class="page-header">
     <div class="header_top">
@@ -17,7 +15,7 @@
           <a class="logo_header" href="index.html">техномарт</a>
           <form class="form_search">
             <label class="button_search" for="search_text_head"></label>
-          <input type="search" class="search_text" id="search_text_head" placeholder="Поиск" name="search">
+            <input type="search" class="search_text" id="search_text_head" placeholder="Поиск" name="search">
           </form>
           <ul class="order_buttons">
             <li class="menu-top_bookmarks header_link">
@@ -64,10 +62,8 @@
         <div class="promo-container">
           <div class="promo-top">
             <div class="promo-item  materials catalog_item_new">
-            <h4 class="promo-name">Материалы</h4>
-
+              <h4 class="promo-name">Материалы</h4>
               <a class="promo-info   materials-info " href="catalog.html">НА ЛЮБОЙ ВКУС</a>
-
             </div>
             <div class="promo-item instruments">
               <div class="features-img features-img_instruments"></div>
@@ -82,7 +78,7 @@
           </div>
           <div class="promo-bottom">
             <div class="promo-item_slider">
-              <ul id="slider">
+              <ul class="promo-item_slider-list" id="slider">
                 <li class="promo-item_slider1  show">
                   <h3 class="slider-1_name">Дрели</h3>
                   <p class="description">Соседям на радость!</p>
@@ -91,7 +87,7 @@
                 <li class="promo-item_slider2">
                   <h3 class="slider-1_name">Перфораторы</h3>
                   <p class="description">Настоящие мужские игрушки</p>
-                    <a class="red_button drill" href="catalog.html">Открыть каталог</a>
+                  <a class="red_button drill" href="catalog.html">Открыть каталог</a>
                 </li>
               </ul>
               <button class="button promo-item_slider-button-back" type="button"></button>
@@ -109,13 +105,9 @@
                 <a class="promo-info  delivery-info" href="catalog.html">БЕСПЛАТНО</a>
               </div>
             </div>
-
-
-
           </div>
         </div>
       </section>
-
       <section class="products">
         <div class="products_title">
           <h2 class="popular">Популярные товары:</h2>
@@ -129,7 +121,6 @@
             </div>
             <div class="image"><img src="img/perf-1.jpg" width="184" height="161" alt="Перфоратор BOSCH BFG 9000">
             </div>
-
             <a class="title" href="#">Перфоратор BOSCH BFG 9000</a>
             <del class="price-old">32 500 P.</del>
             <ins class="price">25 500 P.</ins>
@@ -183,8 +174,8 @@
           <li class="manufacturers_item"><a href="#"> <img src="img/aeg.png" width="151" height="96" alt="AEG"></a></li>
           <li class="manufacturers_item"><a href="#"> <img src="img/metabo.png" width="204" height="69" alt="METABO"></a></li>
         </ul>
-    </section>
-  </div>
+      </section>
+    </div>
     <section class="services">
       <div class="container">
         <div class="services_container_description">
@@ -195,15 +186,12 @@
           <input class="delivery_input" type="radio" id="btn-1" name="inform_block" checked>
           <input class="garanty_input" type="radio" id="btn-2" name="inform_block">
           <input class="credit_input" type="radio" id="btn-3" name="inform_block">
-
           <div class="services_control">
             <label class="delivery_input_block" for="btn-1">Доставка</label>
             <label class="garanty_input_block" for="btn-2">Гарантия</label>
             <label class="credit_input_block" for="btn-3">Кредит</label>
           </div>
-
           <div class="description_block">
-
             <div class="inner-description_block services_shipping">
               <h2>Доставка</h2>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
@@ -216,12 +204,11 @@
               <h2>Кредит</h2>
               <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
             </div>
-
           </div>
         </div>
-        </div>
+      </div>
     </section>
-  <section class="company_description_n_contacts container">
+    <section class="company_description_n_contacts container">
       <div class="company_description">
         <h3 class="company_name">КОМПАНИЯ "ТЕХНОМАРТ"</h3>
         <p class="about_company">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
@@ -241,7 +228,7 @@
         </div>
         <button class="contacts_button_lost red_button">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ</button>
       </div>
-  </section>
+    </section>
   </main>
   <footer>
     <div class="footer_top_background">
@@ -270,7 +257,6 @@
           <div class="footer_contacts">
             <address class="footer_adress">г.Санкт-Петербург, ул., Б. Конюшенная, д.19/8</address>
             <a href="tel:+74955550555" class="footer_contacts_phone">+7 (495) 555-05-55</a>
-
           </div>
           <ul class="footer_top_second_menu">
             <li><a class="footer_top_second_menu_button footer_button" href="catalog.html">Материалы</a>
@@ -314,35 +300,27 @@
   </footer>
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.599104370518!2d30.320889251753!3d59.93879418178733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1522156517498"
+    <iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.599104370518!2d30.320889251753!3d59.93879418178733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1522156517498"
       width="940" height="446"></iframe>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
   <section class="modal modal-write_us">
     <form class="modal_form">
-<div class="modal_container">
-      <label for="login" class="label_login modal_label">Ваше имя:<br>
+      <div class="modal_container">
+        <label for="login" class="label_login modal_label">Ваше имя:<br>
       <input type="text" class="modal_input input_login" id="login" placeholder="Представьтесь, пожалуйста"></label>
-
-
-      <label for="email" class="label_email modal_label">Ваш e-mail:<br>
+        <label for="email" class="label_email modal_label">Ваш e-mail:<br>
           <input type="email" class="modal_input input_email" id="email" placeholder="Для отправки ответа"></label>
-
-
-      <label for="letter" class="label_letter modal_label">Текст письма:<br>
+        <label for="letter" class="label_letter modal_label">Текст письма:<br>
       <textarea  class="modal_input input_letter" id="letter" placeholder="В свободной форме"></textarea></label>
       </div>
       <div class="modal-background">
         <button class="modal_button" type="submit">Отправить</button>
       </div>
     </form>
-
-
     <button class="modal-close" type="button">Закрыть</button>
   </section>
-
-  <script src="js/scripts.js">
-    </script>
-    </body>
-
-    </html>
+  <script src="js/scripts-mini.js">
+  </script>
+</body>
+</html>

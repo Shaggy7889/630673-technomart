@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>Проект "Техномарт"</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-mini.css" rel="stylesheet">
 </head>
-
 <body>
   <header class="page-header">
     <div class="header_top">
       <div class="container">
         <div class="header_top_flex">
-          <a class="logo_header" href="#">техномарт</a>
+          <a class="logo_header" href="index.html">техномарт</a>
           <form class="form_search">
             <label class="button_search" for="search_text_head"></label>
             <input type="search" class="search_text" id="search_text_head" placeholder="Поиск" name="search">
@@ -75,8 +72,8 @@
         <section class="filters">
           <p class="filters_name-field">ФИЛЬТР:</p>
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-            <fieldset>
-              <legend class="forms_name">Цена:</legend>
+            <fieldset class="filter_fieldset">
+              <legend class="forms_name">ЦЕНА:</legend>
               <div class="range-controls">
                 <div class="scale">
                   <div style="width:70%" class="bar"></div>
@@ -91,12 +88,12 @@
               </div>
             </fieldset>
             <div class="filter_manufactures">
-              <fieldset>
-                <legend class="filter_manufactures_name">Производители:</legend>
+              <fieldset class="filter_fieldset">
+                <legend class="filter_manufactures_name">ПРОИЗВОДИТЕЛИ:</legend>
                 <ul class="filter-option">
                   <li class="filter-option1">
                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="BOSCH" id="filter-BOSCH" checked>
-                    <label for="filter-BOSCH">BOSCH</label>
+                    <label class="name_manufactures" for="filter-BOSCH">BOSCH</label>
                   </li>
                   <li class="filter-option1">
                     <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="INTERSCOL" id="filter-INTERSCOL">
@@ -118,7 +115,7 @@
               </fieldset>
             </div>
             <fieldset class="form_check">
-              <legend class="form_check_name">Питание:</legend>
+              <legend class="form_check_name">ПИТАНИЕ:</legend>
               <ul class="filter-option filter-option_radio">
                 <li class="filter-option2">
                   <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="battery" id="filter-battery">
@@ -132,11 +129,10 @@
             </fieldset>
             <button type="submit" class="filter-button">Показать</button>
           </form>
-
         </section>
         <section class="catalog nsorting">
           <div class="sorting">
-            <p>Сортировка:</p>
+            <p class="sorting_name">Сортировка:</p>
             <ul class="sorting_buttons">
               <li class="sorting_price">
                 <input type="radio" id="sorting_input_price" name="filter_radio" class="sorting_buttons_price" checked>
@@ -258,7 +254,6 @@
                 </li>
             </ul>
           </div>
-
           <ul class="catalog_paginator">
             <li class="catalog_paginator_score"><button class="page-button page-button_1">1</button>
             </li>
@@ -275,8 +270,8 @@
     <div class="about_product_text">
       <div class="container">
         <h2 class="about_perforator">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
-        <p class="about_perforator_text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br> Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта
-          и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+        <p class="about_perforator_text">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br> Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
+          шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </div>
     </div>
   </main>
@@ -284,7 +279,7 @@
     <div class="footer_top_background">
       <div class="footer_top container">
         <div class="footer_top_main">
-          <a class="logo_footer" href="#">техномарт</a>
+          <a class="logo_footer" href="index.html">техномарт</a>
           <ul class="footer_top_main_menu">
             <li>
               <a class="footer_top_button footer_button" href="#">Компания</a>
@@ -307,7 +302,6 @@
           <div class="footer_contacts">
             <address class="footer_adress">г.Санкт-Петербург, ул., Б. Конюшенная, д.19/8</address>
             <a href="tel:+74955550555" class="footer_contacts_phone">+7 (495) 555-05-55</a>
-
           </div>
           <ul class="footer_top_second_menu">
             <li><a class="footer_top_second_menu_button footer_button" href="catalog.html">Материалы</a>
@@ -322,7 +316,7 @@
         </div>
       </div>
     </div>
-        <div class="footer_bottom_background">
+    <div class="footer_bottom_background">
       <div class="container">
         <div class="footer_bottom">
           <div class="footer_work_bottom">
@@ -349,6 +343,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/scripts-mini.js">
+  </script>
 </body>
-
 </html>
