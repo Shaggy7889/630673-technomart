@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Проект "Техномарт"</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -15,9 +14,9 @@
     <div class="header_top">
       <div class="container">
         <div class="header_top_flex">
-          <a class="logo_header" href="#">техномарт</a>
+          <a class="logo_header" href="index.html">техномарт</a>
           <form class="form_search">
-            <label class="button_search" for="search_text_head"></label><input class="icon-search" id="icon_search_text" type="image" src="img/svg/icon-search.svg" width="15" height="15"  alt="поиск">
+            <label class="button_search" for="search_text_head"></label>
           <input type="search" class="search_text" id="search_text_head" placeholder="Поиск" name="search">
           </form>
           <ul class="order_buttons">
@@ -65,8 +64,7 @@
         <div class="promo-container">
           <div class="promo-top">
             <div class="promo-item  materials catalog_item_new">
-              <div class="features-img features-img_materials"></div>
-              <h4 class="promo-name">Материалы</h4>
+            <h4 class="promo-name">Материалы</h4>
 
               <a class="promo-info   materials-info " href="catalog.html">НА ЛЮБОЙ ВКУС</a>
 
@@ -93,6 +91,7 @@
                 <li class="promo-item_slider2">
                   <h3 class="slider-1_name">Перфораторы</h3>
                   <p class="description">Настоящие мужские игрушки</p>
+                    <a class="red_button drill" href="catalog.html">Открыть каталог</a>
                 </li>
               </ul>
               <button class="button promo-item_slider-button-back" type="button"></button>
@@ -248,7 +247,7 @@
     <div class="footer_top_background">
       <div class="footer_top container">
         <div class="footer_top_main">
-          <a class="logo_footer" href="#">техномарт</a>
+          <a class="logo_footer" href="index.html">техномарт</a>
           <ul class="footer_top_main_menu">
             <li>
               <a class="footer_top_button footer_button" href="#">Компания</a>
@@ -317,21 +316,20 @@
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.599104370518!2d30.320889251753!3d59.93879418178733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1522156517498"
       width="940" height="446"></iframe>
-    <p><img src="img/map_popup.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
   <section class="modal modal-write_us">
     <form class="modal_form">
 <div class="modal_container">
-      <label for="login" class="label_login">Ваше имя:<br>
+      <label for="login" class="label_login modal_label">Ваше имя:<br>
       <input type="text" class="modal_input input_login" id="login" placeholder="Представьтесь, пожалуйста"></label>
 
 
-      <label for="email" class="label_email">Ваш e-mail:<br>
+      <label for="email" class="label_email modal_label">Ваш e-mail:<br>
           <input type="email" class="modal_input input_email" id="email" placeholder="Для отправки ответа"></label>
 
 
-      <label for="letter" class="label_letter">Текст письма:<br>
+      <label for="letter" class="label_letter modal_label">Текст письма:<br>
       <textarea  class="modal_input input_letter" id="letter" placeholder="В свободной форме"></textarea></label>
       </div>
       <div class="modal-background">
