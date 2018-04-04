@@ -243,11 +243,11 @@ body {
   padding-right: 14px;
 }
 
- .button_login:hover .login_image {
+.button_login:hover .login_image {
   opacity: 1;
 }
 
- .button_login:active .login_image {
+.button_login:active .login_image {
   opacity: 0.5;
 }
 
@@ -298,10 +298,6 @@ body {
   color: #a1a4a8;
   background: #1d2739;
 }
-
-/* Пошел main  */
-
-/*Промо блок  */
 
 .promo_blocks {
   margin-top: 59px;
@@ -399,6 +395,41 @@ body {
   padding: 11px 26px;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.materials-info {
+  position: relative;
+  top: -4px;
+  left: 5px;
+  padding: 11px 21px 10px 23px;
+}
+
+.instrument-info {
+  position: relative;
+  padding: 11px 23px 10px 27px;
+  top: -3px;
+  left: 4px;
+}
+
+.machines-info {
+  padding: 11px 30px 7px 29px;
+  position: relative;
+  top: -3px;
+  left: 4px;
+}
+
+.discount-info {
+  padding: 12px 17px 10px 26px;
+  position: relative;
+  top: -5px;
+  left: 0px;
+}
+
+.delivery-info {
+  position: relative;
+  top: -3px;
+  left: 3px;
+  padding: 12px 36px 11px 36px;
 }
 
 .promo-info {
@@ -506,7 +537,7 @@ body {
 .promo-item_slider1 {
   width: 620px;
   height: 262px;
-  background-image: url(../img/slider-1.jpg);
+  background-image: url(../img/slider-2.jpg);
   background-repeat: no-repeat;
   display: none;
 }
@@ -515,7 +546,7 @@ body {
   display: none;
   width: 620px;
   height: 262px;
-  background-image: url(../img/slider-2.jpg);
+  background-image: url(../img/slider-1.jpg);
   background-repeat: no-repeat;
   display: none;
 }
@@ -697,7 +728,8 @@ body {
   font-weight: bold;
   position: relative;
   left: 5px;
-  bottom: 3px;
+  bottom: 1px;
+  margin-bottom: 3px;
 }
 
 .price_constant {
@@ -727,7 +759,7 @@ body {
   margin-bottom: 60px;
 }
 
-li.manufacturers_item {
+.manufacturers_item {
   border: 1px solid #ebebeb;
   width: 220px;
   height: 145px;
@@ -737,11 +769,11 @@ li.manufacturers_item {
   margin-bottom: 20px;
 }
 
-li.manufacturers_item:hover {
+.manufacturers_item:hover {
   box-shadow: 0 8px 25px 5px #c0c0c0
 }
 
-li.manufacturers_item:active {
+.manufacturers_item:active {
   opacity: 0.3
 }
 
@@ -749,7 +781,7 @@ li.manufacturers_item:active {
   background: #f0f4f6;
 }
 
-h2.block-services_name {
+.block-services_name {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -1067,7 +1099,7 @@ ul.footer_top_main_menu {
   max-width: 276px;
   color: #f3f7f9;
   font-size: 16.2px;
-  line-height: 24px;
+  line-height: 21px;
   margin-right: 41px;
 }
 
@@ -1123,8 +1155,8 @@ ul.footer_top_main_menu {
 
 .vk {
   position: relative;
-  left: 9px;
-  top: 12px;
+  left: 13px;
+  top: 11px;
 }
 
 .footer_social_menu_fb {
@@ -1138,8 +1170,8 @@ ul.footer_top_main_menu {
 
 .fb {
   position: relative;
-  left: 15px;
-  top: 10px;
+  left: 9px;
+  top: 11px;
 }
 
 .footer_social_menu_insta {
@@ -1152,7 +1184,7 @@ ul.footer_top_main_menu {
 
 .insta {
   position: relative;
-  left: 11px;
+  left: 5px;
   top: 10px;
 }
 
@@ -1168,7 +1200,6 @@ ul.footer_top_main_menu {
 .red_button-manufactures {
   border-radius: 3px;
   padding: 8px 68px 0px 69px;
-  max-height: 28px;
 }
 
 .red_button:hover {
@@ -1360,6 +1391,7 @@ ul.footer_top_main_menu {
   font-size: 13px;
   line-height: 18px;
   font-family: 'PT Sans', Arial, sans-serif;
+  flex-wrap: wrap;
 }
 
 .sorting_name {
@@ -1373,6 +1405,7 @@ ul.footer_top_main_menu {
   list-style: none;
   display: flex;
   margin-left: 69px;
+  flex-wrap: wrap;
 }
 
 .sorting_price {
@@ -1488,6 +1521,7 @@ ul.footer_top_main_menu {
   margin: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .sorting_arrows_up {
@@ -1558,10 +1592,11 @@ ul.footer_top_main_menu {
   background-color: #ffff;
   border-radius: 6px;
   outline: none;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 18px;
   text-transform: lowercase;
   padding: 0px 0px 6px 12px;
+  font-family: 'PT Sans', Arial, sans-serif;
 }
 
 .visually-hidden {
@@ -1582,6 +1617,20 @@ ul.footer_top_main_menu {
 .filter-option_radio {
   padding-left: 10px;
   margin-bottom: 9px;
+}
+
+.filter-input {
+  z-index: 1;
+  zoom: 2;
+  transform: scale(0);
+}
+
+.filter-input:focus+label {
+  outline: 1px solid grey;
+}
+
+.name_manufactures {
+  z-index: 2;
 }
 
 .filter-option1 label::before {
@@ -1640,20 +1689,21 @@ ul.footer_top_main_menu {
   font-weight: 100;
   text-transform: lowercase;
   position: relative;
-  top: 72px;
+  top: 69px;
+  ;
 }
 
 .filter_manufactures {
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
-  padding: 17px 0px 8px 0px;
-  margin-bottom: 15px;
+  padding: 17px 0px 10px 0px;
+  margin-bottom: 16px;
 }
 
 .about_puncher {
   padding: 0;
   padding-top: 67.5px;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   font-size: 30px;
   font-family: 'Cuprum', Arial, sans-serif;
   font-weight: 400;
@@ -2007,11 +2057,17 @@ div .credit_input:checked~div .credit_input_block {
 }
 
 .filter-option1 {
-  margin-bottom: 13px;
+  margin-bottom: 10px;
+  position: relative;
+  left: -29px;
+  top: -3px;
 }
 
 .filter-option2 {
-  margin-bottom: 7px;
+  position: relative;
+  left: -29px;
+  top: -3px;
+  margin-bottom: 10px;
 }
 
 .form_check_name {
