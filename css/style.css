@@ -56,7 +56,7 @@ body {
   padding-top: 11px;
   padding-left: 13px;
   z-index: 2;
-  top: 2px;
+  top: 11px;
 }
 
 .button_search::before {
@@ -72,9 +72,11 @@ body {
   background: none;
   border: none;
   outline: none;
-  height: 100%;
-  width: 100%;
   padding-left: 47px;
+  z-index: 1;
+  position: relative;
+  top: 9px;
+  right: 32px;
 }
 
 .form_search:hover {
@@ -1656,10 +1658,10 @@ ul.footer_top_main_menu {
   background-color: #ffff;
   border-radius: 6px;
   outline: none;
-  font-weight: 400;
-  font-size: 18px;
+  font-size: 15px;
   text-transform: lowercase;
-  padding: 0px 0px 6px 12px;
+  line-height: 18px;
+  padding: 2px 10px 6px 12px;
   font-family: 'PT Sans', Arial, sans-serif;
 }
 
