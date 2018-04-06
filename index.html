@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Проект "Техномарт"</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -21,10 +21,10 @@
           </form>
           <ul class="order_buttons">
             <li class="menu-top_bookmarks header_link">
-              <a class="buttons_bookmarks" href="#"><img src="img/svg/icon-bookmark.svg" width='14' height="16" alt="Закладки" class="order_buttons_image">Закладки: 0</a>
+              <a class="buttons_bookmarks" href="#">Закладки: 0</a>
             </li>
             <li class="header_link">
-              <a class="buttons_cart" href="#"><img src="img/svg/icon-cart.svg" width="15" height="15" alt="Корзина" class="order_buttons_image">Корзина: 0</a>
+              <a class="buttons_cart" href="#">Корзина: 0</a>
             </li>
             <li class="menu-top_order">
               <a class="menu-top_order-done" href="#">Оформить заказ</a>
@@ -37,11 +37,11 @@
       <div class="header_mid">
         <p class="header_mid_text">Интернет-магазин строительных материвалов и инструментов для ремонта</p>
         <div class="header_mid_contacts">
-          <a href="tel:+74955550555" class="contacts_phone"><img class="header_mid_telefon" width="19" height="15" src="img/svg/icon-phone.svg" alt="Telefon"> +7 (495) 555-05-55</a>
+          <a href="tel:+74955550555" class="contacts_phone">+7 (495) 555-05-55</a>
           <p>г.Санкт-Петербург, ул., Б. Конюшенная, д.19/8</p>
         </div>
         <ul class="login_registration">
-          <li class="login_registration login_registration-margin-right"><a class="button button_login" href="#"><img class="login_image" src="img/svg/icon-login.svg" width="20" height="17" alt="войти">Войти</a></li>
+          <li class="login_registration login_registration-margin-right"><a class="button button_login button_entry" href="#">Войти</a></li>
           <li class="login_registration "><a class="button  button_login button_registration" href="#">Регистрация</a></li>
         </ul>
       </div>
@@ -94,6 +94,16 @@
               </ul>
               <button class="button promo-item_slider-button-back" type="button"></button>
               <button class="button promo-item_slider-button-next" type="button"></button>
+              <ul class="promo-item_paginator">
+                <li class="paginator-label">
+                  <input class="paginator_bullet-slider1 promo-paginator" type="radio" name="paginator_bullet" value="slider-1" id="paginator-slider1" checked>
+                  <label for="paginator-slider1"></label>
+                </li>
+                <li class="paginator-label">
+                  <input class="paginator_bullet-slider2 promo-paginator" type="radio" name="paginator_bullet" value="slider-2" id="paginator-slider2">
+                  <label for="paginator-slider2"></label>
+                </li>
+              </ul>
             </div>
             <div class="promo-wrapper">
               <div class="promo-item   discount">
@@ -117,10 +127,14 @@
         </div>
         <ul class="catalog">
           <li class="catalog_item">
-            <div class="actions">
-              <button class="actions_buy"><img class="actions_buy_image" width="15" height="15" src="img/svg/icon-cart.svg" alt="купить"> Купить</button>
-              <button class="actions_bookmark">В закладки</button>
-            </div>
+            <ul class="actions_button actions">
+              <li class="actions_hover">
+                <button class="actions_buy">Купить</button>
+              </li>
+              <li class="actions_hover">
+                <button class="actions_bookmark">В закладки</button>
+              </li>
+            </ul>
             <div class="image"><img src="img/perf-1.jpg" width="184" height="161" alt="Перфоратор BOSCH BFG 9000">
             </div>
             <a class="title" href="#">Перфоратор BOSCH BFG 9000</a>
@@ -128,10 +142,14 @@
             <ins class="price">25 500 P.</ins>
           </li>
           <li class="catalog_item">
-            <div class="actions">
-              <button class="actions_buy"><img class="actions_buy_image" width="15" height="15" src="img/svg/icon-cart.svg"  alt="купить">Купить</button>
-              <button class="actions_bookmark">В закладки</button>
-            </div>
+            <ul class="actions_button actions">
+              <li class="actions_hover">
+                <button class="actions_buy">Купить</button>
+              </li>
+              <li class="actions_hover">
+                <button class="actions_bookmark">В закладки</button>
+              </li>
+            </ul>
             <div class="image"><img src="img/perf-2.jpg" width="184" height="161" alt="Перфоратор Bosch BFG 3000">
             </div>
             <a class="title" href="#">Перфоратор BOSCH BFG 3000</a>
@@ -139,10 +157,14 @@
             <ins class="price">15 500 P.</ins>
           </li>
           <li class="catalog_item">
-            <div class="actions">
-              <button class="actions_buy"><img class="actions_buy_image" width="15" height="15" src="img/svg/icon-cart.svg"  alt="купить">Купить</button>
-              <button class="actions_bookmark">В закладки</button>
-            </div>
+            <ul class="actions_button actions">
+              <li class="actions_hover">
+                <button class="actions_buy">Купить</button>
+              </li>
+              <li class="actions_hover">
+                <button class="actions_bookmark">В закладки</button>
+              </li>
+            </ul>
             <div class="image"><img src="img/perf-3.jpg" width="184" height="161" alt="Перфоратор Bosch BFG 6000">
             </div>
             <a class="title" href="#">Перфоратор BOSCH BFG 6000</a>
@@ -150,10 +172,14 @@
             <ins class="price">25 500 P.</ins>
           </li>
           <li class="catalog_item catalog_item_new">
-            <div class="actions">
-              <button class="actions_buy"><img class="actions_buy_image" width="15" height="15" src="img/svg/icon-cart.svg"  alt="купить">Купить</button>
-              <button class="actions_bookmark">В закладки</button>
-            </div>
+            <ul class="actions_button actions">
+              <li class="actions_hover">
+                <button class="actions_buy">Купить</button>
+              </li>
+              <li class="actions_hover">
+                <button class="actions_bookmark">В закладки</button>
+              </li>
+            </ul>
             <div class="image"><img src="img/perf-4.jpg" width="184" height="161" alt="Перфоратор Bosch BFG 2000">
             </div>
             <a class="title" href="#">Перфоратор BOSCH BFG 2000</a>
@@ -167,14 +193,14 @@
           <a class="button_catalog red_button-manufactures" href="catalog.html">Все производители:</a>
         </div>
         <ul class="catalog_manufacturers">
-          <li class="manufacturers_item"><a href="#"> <img src="img/bosch.png" width="126" height="37" alt="BOSCH"></a></li>
-          <li class="manufacturers_item"><a href="#"> <img src="img/makita.png" width="123" height="40" alt="MAKITA"></a></li>
-          <li class="manufacturers_item"><a href="#"> <img src="img/dewalt.png" width="146" height="45" alt="DEWALT"></a></li>
-          <li class="manufacturers_item"><a href="#"> <img src="img/interscol.png" width="184" height="32" alt="ИНТЕРСКОЛ"></a></li>
-          <li class="manufacturers_item"><a href="#"> <img src="img/hitachi.png" width="169" height="31" alt="HITACHI"></a></li>
-          <li class="manufacturers_item"><a href="#"> <img src="img/lg.png" width="121" height="73" alt="LG"></a></li>
-          <li class="manufacturers_item"><a href="#"> <img src="img/aeg.png" width="151" height="96" alt="AEG"></a></li>
-          <li class="manufacturers_item"><a href="#"> <img src="img/metabo.png" width="204" height="69" alt="METABO"></a></li>
+          <li><a class="manufacturers_item" href="#"> <img src="img/bosch.png" width="126" height="37" alt="BOSCH"></a></li>
+          <li><a class="manufacturers_item" href="#"> <img src="img/makita.png" width="123" height="40" alt="MAKITA"></a></li>
+          <li><a class="manufacturers_item" href="#"> <img src="img/dewalt.png" width="146" height="45" alt="DEWALT"></a></li>
+          <li><a class="manufacturers_item" href="#"> <img src="img/interscol.png" width="184" height="32" alt="ИНТЕРСКОЛ"></a></li>
+          <li><a class="manufacturers_item" href="#"> <img src="img/hitachi.png" width="169" height="31" alt="HITACHI"></a></li>
+          <li><a class="manufacturers_item" href="#"> <img src="img/lg.png" width="121" height="73" alt="LG"></a></li>
+          <li><a class="manufacturers_item" href="#"> <img src="img/aeg.png" width="151" height="96" alt="AEG"></a></li>
+          <li><a class="manufacturers_item" href="#"> <img src="img/metabo.png" width="204" height="69" alt="METABO"></a></li>
         </ul>
       </section>
     </div>
@@ -278,21 +304,21 @@
         <div class="footer_bottom">
           <div class="footer_work_bottom">
             <p class="copyright">© 2010–2017 Компания «Техномарт»<br> Все права защищены</p>
-            <div class="footer_social">
-              <ul class="footer_social_menu">
-                <li class="social_menu footer_social_menu_vk"><a class="btn-social vk" href="http://vk.com"> <img src="img/svg/icon-vk.svg" width="25" height="20" alt="Вконтакте"></a></li>
-                <li class="social_menu footer_social_menu_fb"><a class="btn-social fb" href="http://facebook.com"><img src="img/svg/icon-fb.svg" width="25" height="20" alt="Facebook"></a></li>
-                <li class="social_menu footer_social_menu_insta"><a class="btn-social insta" href="http://instagram.com"><img src="img/svg/icon-insta.svg" width="25" height="20" alt="Instagram"></a></li>
-              </ul>
-            </div>
+            <ul class="footer_social_menu">
+              <li class="social_menu footer_social_menu_vk"><a class="btn-social vk" href="http://vk.com"> <img src="img/svg/icon-vk.svg" width="25" height="20" alt="Вконтакте"></a></li>
+              <li class="social_menu footer_social_menu_fb"><a class="btn-social fb" href="http://facebook.com"><img src="img/svg/icon-fb.svg" width="25" height="20" alt="Facebook"></a></li>
+              <li class="social_menu footer_social_menu_insta"><a class="btn-social insta" href="http://instagram.com"><img src="img/svg/icon-insta.svg" width="25" height="20" alt="Instagram"></a></li>
+            </ul>
             <div>
               <ul class="feedback">
                 <li class="feedback_mail">
                   <p class="feedback_name">Обратная связь:</p>
                   <a class="feedback_button" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-                  <li class="feedback_html">
-                    <p class="feedback_name">Разработано — </p>
-                    <a class="feedback_button" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+                </li>
+                <li class="feedback_html">
+                  <p class="feedback_name">Разработано — </p>
+                  <a class="feedback_button" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+                </li>
               </ul>
             </div>
           </div>

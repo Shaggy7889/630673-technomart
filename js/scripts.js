@@ -79,6 +79,8 @@ var back = document.querySelector(".promo-item_slider-button-back");
 var next = document.querySelector(".promo-item_slider-button-next");
 var slide1 = document.querySelector(".promo-item_slider1");
 var slide2 = document.querySelector(".promo-item_slider2");
+var bullet1 = document.querySelector("#paginator-slider1");
+var bullet2 = document.querySelector("#paginator-slider2");
 
 next.addEventListener("click", function(e) {
   e.preventDefault();
@@ -87,9 +89,13 @@ next.addEventListener("click", function(e) {
     slide2.classList.remove("show");
     slide1.classList.add("show");
     slide1.classList.add("show");
+    bullet2.getAttribute('checked');
+    bullet1.removeAttribute('checked');
   } else {
     slide1.classList.remove("show");
     slide2.classList.add("show");
+    bullet1.getAttribute('checked')
+    bullet2.removeAttribute('checked')
   }
 });
 back.addEventListener("click", function(e) {
@@ -98,8 +104,12 @@ back.addEventListener("click", function(e) {
     slide2.classList.remove("show");
     slide1.classList.add("show");
     slide1.classList.add("show");
+    bullet2.getAttribute('checked');
+    bullet1.removeAttribute('checked');
   } else {
     slide1.classList.remove("show");
     slide2.classList.add("show");
+      bullet1.getAttribute('checked');
+      bullet2.removeAttribute('checked');
   }
 });
