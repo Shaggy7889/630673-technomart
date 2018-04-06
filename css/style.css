@@ -1,3 +1,7 @@
+html {
+  min-width: 960px;
+}
+
 body {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 13px;
@@ -16,7 +20,6 @@ body {
 
 .header_top_flex {
   display: flex;
-  height: 42px;
   justify-content: space-between;
 }
 
@@ -47,6 +50,7 @@ body {
 .form_search {
   position: relative;
   width: 270px;
+  height: 42px;
 }
 
 .button_search {
