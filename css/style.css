@@ -29,7 +29,7 @@ body {
 
 .logo_header {
   font-size: 24px;
-  padding: 11px 55px 0 55px;
+  padding: 11px 55px 9px 55px;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
@@ -52,35 +52,27 @@ body {
   width: 270px;
   height: 42px;
   display: flex;
-}
+  }
 
 .button_search {
-  position: relative;
-  z-index: 2;
-  top: 12px;
-  padding-top: 11px;
-  padding-left: 13px;
-  opacity: 1;
-  border: medium none;
-  background-color: transparent;
+  min-width: 36px;
 }
 
 .button_search::before {
   position: absolute;
-  z-index: 99;
-  left: 18px;
   content: "";
+  left: 18px;
+  top: 9px;
   width: 17px;
   height: 17px;
   background: transparent url(../img/svg/icon-search.svg) center center/cover no-repeat;
   bottom: 24px;
 }
 
-.search_text:focus + .button_search {
-  background: red;
-}
+
 
 .search_text {
+  position: relative;
   font-size: 17px;
   height: 100%;
   color: #000;
@@ -88,8 +80,9 @@ body {
   outline: none;
   background-color: transparent;
   display: block;
-  padding: 0px 5px 0px 38px;
+  padding: 0px 5px 0px 13px;
   width: 100%;
+  order: 2;
 }
 
 .search_text::placeholder {
@@ -102,6 +95,14 @@ body {
 
 .search_text:focus::placeholder {
   color: transparent;
+}
+
+.search_text:focus  + .button_search {
+    background-color: #fff;
+}
+
+.search_text:focus  + .button_search:before {
+    background-image: url(../img/icon-search_red.png);
 }
 
 .form_search:hover {
@@ -209,7 +210,7 @@ body {
   max-width: 940px;
   margin: 0 auto;
   padding-top: 49px;
-  padding-bottom: 40px;
+  padding-bottom: 38px;
   justify-content: space-between;
 }
 
